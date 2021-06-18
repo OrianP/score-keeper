@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer src="app-solution-2.js"></script>
+  <title>Score Keeper</title>
+</head>
+<body>
+  <main>
+    <img src="./banner.jpg" alt="Letter Dice spelling out the word 'game'">
+    <h1>Score Keeper</h1>
+
+    <form>
+      <label for="player1-name">Player 1</label>
+      <input id="player1-name" type="text" name="name">
+      <label for="player2-name">Player 2</label>
+      <input id="player2-name" type="text" name="name">
+      <button class="submit-btn"type="button">Submit</button>
+    </form>
+    <section>
+      <p><span id="player1" class="scores">0</span><span class="scores-to"> to </span><span id="player2" class="scores">0</span></p>
+      <p id="winner">Use the buttons below to keep score</p>
+
+      <label for="number-select" class="games-label">Playing to 
+        <select id="number-select" name="numbers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select> games</label>
+      <div class="btn-container">
+        <button id="playerBtn1" class="playerBtns">+1 Player 1</button>
+        <button id="playerBtn2" class="playerBtns">+1 Player 2</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>  
+  </main>  
+  <footer>
+    <p>Photo by <a href="https://unsplash.com/@metelevan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrey Metelev</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </p>
+  </footer>
+</body>
+</html>

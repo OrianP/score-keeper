@@ -1,0 +1,166 @@
+/* Layout */
+
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(to bottom, #507da0, #749db3, #9dbcc8, #cadbde, #f9fafa);
+}
+
+main {
+   margin: 1rem 0; 
+   box-shadow: 0px 10px 8px -6px rgba(155, 155, 155, 0.70);
+   background-color: #fff;
+   border-radius: 3px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    font-size: 12px;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: solid 1px rgba(212, 212, 213, 0.48);
+    border-bottom: solid 1px rgba(212, 212, 213, 0.48);
+    padding: 1.5rem;
+}
+
+label {
+    margin: 0.5rem 0rem;
+}
+
+input {
+    outline-color: #f89b10;
+    padding-left: 0.5rem;
+    font-size: inherit;    
+}
+
+/* Text, Images and Select */
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+img {
+    width: 400px;
+    max-width: 100%;
+
+}
+
+a {
+    color: #6e6e6d;
+}
+
+.scores{
+    font-size: 2rem;
+
+}
+
+.scores-to {
+    font-size: 1.5rem;
+}
+
+.games-label {
+    font-weight: 600;
+}
+
+select {
+    border-color: #f89b10;
+    border-radius: 15px;
+    padding: 2px 4px;
+    background-color: #F7F5DD;
+    font-size: 1rem;    
+}
+
+select:focus {
+    outline: none;  
+       
+}
+
+/* Buttons */
+
+button {
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: inherit;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 1.5px;
+}
+
+.submit-btn {
+    margin: 1rem 0;
+    width: 50%;
+    align-self: center;
+    background-color: #f89b10;
+    transition: background-color 350ms ease-out;
+}
+
+.submit-btn:hover {
+    background-color: #e97407;
+    cursor: pointer;
+}
+
+.submit-btn:focus {
+    outline-color: #cc4e05;
+}
+
+.btn-container {
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.playerBtns {
+    flex-grow: 1; 
+}
+
+#playerBtn1 {
+    background-color: #0987e7;
+}
+
+#playerBtn2 {
+    background-color: #009781;
+    
+}
+
+#resetBtn {
+    background-color: #E92A68;
+}
+
+/* Dynamic classes */
+
+.disabled {
+    opacity: 0.5;
+}
+
+.winner {
+    color: #00951E;
+}
+
+.loser {
+    color: #B20000
+}
+
+.tie {
+    color: #E92A68;
+}
